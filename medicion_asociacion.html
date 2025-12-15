@@ -11,17 +11,17 @@
 
 <style>
 :root{
-    --bg: #f3f4f6; /* Gris muy claro */
-    --card: #ffffff;
-    --accent: #2563eb; /* Azul primario */
-    --accent-dark: #1e40af;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --shadow-light: rgba(255, 255, 255, 0.7);
-    --shadow-dark: rgba(0, 0, 0, 0.08);
+    --bg: #f3f4f6; /* Gris muy claro */
+    --card: #ffffff;
+    --accent: #2563eb; /* Azul primario */
+    --accent-dark: #1e40af;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --shadow-light: rgba(255, 255, 255, 0.7);
+    --shadow-dark: rgba(0, 0, 0, 0.08);
 
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
 body{ margin:0; background:var(--bg); color:#1f2937; line-height:1.5; }
 .container{ max-width:1200px; margin:32px auto; padding:0 20px; }
@@ -32,52 +32,52 @@ header p{ margin:0; color:var(--muted); font-size:14px; }
 h3{ font-size:18px; font-weight:600; color:#111827; margin-top:0; margin-bottom:12px; border-bottom:1px solid var(--border); padding-bottom:8px; }
 
 /* Estilo de tarjeta con Neumorfismo Suave */
-.card{ 
-    background:var(--card); 
-    border-radius:16px; 
-    padding:20px; 
-    box-shadow: 
-        9px 9px 16px var(--shadow-dark), 
-        -9px -9px 16px var(--shadow-light);
-    transition: all 0.3s ease;
+.card{ 
+    background:var(--card); 
+    border-radius:16px; 
+    padding:20px; 
+    box-shadow: 
+        9px 9px 16px var(--shadow-dark), 
+        -9px -9px 16px var(--shadow-light);
+    transition: all 0.3s ease;
 }
 
 /* Formularios */
 .row{ display:flex; gap:12px; margin-bottom:10px; }
 label{ display:block; font-size:13px; color:var(--muted); margin-bottom:4px; font-weight:600; }
 input:not([type="checkbox"]):not([type="radio"]), select, textarea{
-    width:100%; padding:10px 12px; border-radius:10px; 
-    border:none; 
-    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05), inset -2px -2px 5px rgba(255,255,255,0.7);
-    background-color: var(--bg);
-    box-sizing:border-box;
-    font-size:15px;
-    transition: all 0.2s ease;
+    width:100%; padding:10px 12px; border-radius:10px; 
+    border:none; 
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05), inset -2px -2px 5px rgba(255,255,255,0.7);
+    background-color: var(--bg);
+    box-sizing:border-box;
+    font-size:15px;
+    transition: all 0.2s ease;
 }
 input:focus, select:focus, textarea:focus {
-    outline: none;
-    background-color: var(--card);
-    box-shadow: 
-        0 0 0 2px var(--accent-dark),
-        inset 2px 2px 5px rgba(0,0,0,0.05);
+    outline: none;
+    background-color: var(--card);
+    box-shadow: 
+        0 0 0 2px var(--accent-dark),
+        inset 2px 2px 5px rgba(0,0,0,0.05);
 }
 textarea{ min-height:80px; resize:vertical; }
 
 /* Botones */
-button{ 
-    background:var(--accent); color:white; border:none; 
-    padding:10px 16px; border-radius:10px; cursor:pointer; 
-    font-weight:600; font-size:15px;
-    box-shadow: 3px 3px 6px rgba(0,0,0,0.1), -3px -3px 6px rgba(255,255,255,0.7);
-    transition: all 0.2s ease;
+button{ 
+    background:var(--accent); color:white; border:none; 
+    padding:10px 16px; border-radius:10px; cursor:pointer; 
+    font-weight:600; font-size:15px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.1), -3px -3px 6px rgba(255,255,255,0.7);
+    transition: all 0.2s ease;
 }
 button:hover{ background:var(--accent-dark); }
-button:active{ 
-    box-shadow: inset 3px 3px 6px rgba(0,0,0,0.1), inset -3px -3px 6px rgba(255,255,255,0.7);
+button:active{ 
+    box-shadow: inset 3px 3px 6px rgba(0,0,0,0.1), inset -3px -3px 6px rgba(255,255,255,0.7);
 }
-button.secondary{ 
-    background:var(--bg); color:#111827; 
-    box-shadow: 3px 3px 6px rgba(0,0,0,0.05), -3px -3px 6px rgba(255,255,255,0.7);
+button.secondary{ 
+    background:var(--bg); color:#111827; 
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.05), -3px -3px 6px rgba(255,255,255,0.7);
 }
 button.secondary:hover{ background:#dadce1; }
 
@@ -92,14 +92,14 @@ td:last-child { color: var(--muted); } /* Observaciones */
 
 /* KPIs */
 .kpi-row{ display:flex; gap:16px; flex-wrap:wrap; margin-bottom:16px; }
-.kpi{ 
-    background:var(--card); 
-    border-radius:12px; 
-    padding:14px; 
-    min-width:120px; 
-    flex-grow:1;
-    text-align:center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+.kpi{ 
+    background:var(--card); 
+    border-radius:12px; 
+    padding:14px; 
+    min-width:120px; 
+    flex-grow:1;
+    text-align:center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 .kpi .num{ font-size:24px; font-weight:700; color:var(--accent); margin-bottom:4px; }
 .kpi .label{ font-size:12px; color:var(--muted); font-weight:500; }
@@ -110,631 +110,629 @@ td:last-child { color: var(--muted); } /* Observaciones */
 .chart-container{ height:250px; width:100%; margin-top:16px; }
 
 /* Responsive */
-@media (max-width:1024px){ 
-    .grid{ grid-template-columns: 1fr; } 
-    .card { padding:16px; } 
-    .row { display: block; }
-    .row > div { margin-bottom: 10px; }
+@media (max-width:1024px){ 
+    .grid{ grid-template-columns: 1fr; } 
+    .card { padding:16px; } 
+    .row { display: block; }
+    .row > div { margin-bottom: 10px; }
 }
 @media (max-width:600px){
-    .kpi-row { justify-content: space-around; }
-    .kpi { min-width: unset; width: 45%; }
+    .kpi-row { justify-content: space-around; }
+    .kpi { min-width: unset; width: 45%; }
 }
 </style>
 </head>
 <body>
 <div class="container">
-    <header>
-        <div>
-            <h1>📊 Registro de actividades y métricas — Asociación</h1>
-            <p>Plataforma para recoger datos de talleres, participantes y métricas de comunicación.</p>
-        </div>
-    </header>
+    <header>
+        <div>
+            <h1>📊 Registro de actividades y métricas — Asociación</h1>
+            <p>Plataforma para recoger datos de talleres, participantes y métricas de comunicación.</p>
+        </div>
+    </header>
 
-    <div class="grid">
-        <div>
-            <div class="card" id="formCard">
-                <h3>📝 Registrar Participante / Sesión</h3>
-                <form id="entryForm">
-                    <div class="row">
-                        <div style="flex:1;">
-                            <label for="fecha">Fecha</label>
-                            <input type="date" id="fecha" required />
-                        </div>
-                        <div style="flex:2;">
-                            <label for="taller">Nombre del taller/sesión</label>
-                            <input type="text" id="taller" placeholder="Ej. Taller de juego y resiliencia" required />
-                        </div>
-                    </div>
+    <div class="grid">
+        <div>
+            <div class="card" id="formCard">
+                <h3>📝 Registrar Participante / Sesión</h3>
+                <form id="entryForm">
+                    <div class="row">
+                        <div style="flex:1;">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" required />
+                        </div>
+                        <div style="flex:2;">
+                            <label for="taller">Nombre del taller/sesión</label>
+                            <input type="text" id="taller" placeholder="Ej. Taller de juego y resiliencia" required />
+                        </div>
+                    </div>
 
-                    <div class="row">
-                        <div style="flex:1;">
-                            <label for="lugar">Lugar / Barrio</label>
-                            <input type="text" id="lugar" placeholder="Ej. Centro cívico X" />
-                        </div>
-                        <div style="flex:1;">
-                            <label for="edad">Edad / tramo</label>
-                            <select id="edad">
-                                <option value="">-- Seleccionar --</option>
-                                <option>0-5</option><option>6-12</option><option>13-17</option><option>18-30</option><option>31-60</option><option>60+</option>
-                            </select>
-                        </div>
-                        <div style="flex:1;">
-                            <label for="tipoPublico">Tipo público</label>
-                            <select id="tipoPublico">
-                                <option value="">-- Seleccionar --</option>
-                                <option>Afectado DANA</option>
-                                <option>Familia</option>
-                                <option>Colectivo estigmatizado</option>
-                                <option>Comunidad local</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                    </div>
+                    <div class="row">
+                        <div style="flex:1;">
+                            <label for="lugar">Lugar / Barrio</label>
+                            <input type="text" id="lugar" placeholder="Ej. Centro cívico X" />
+                        </div>
+                        <div style="flex:1;">
+                            <label for="edad">Edad / tramo</label>
+                            <select id="edad">
+                                <option value="">-- Seleccionar --</option>
+                                <option>0-5</option><option>6-12</option><option>13-17</option><option>18-30</option><option>31-60</option><option>60+</option>
+                            </select>
+                        </div>
+                        <div style="flex:1;">
+                            <label for="tipoPublico">Tipo público</label>
+                            <select id="tipoPublico">
+                                <option value="">-- Seleccionar --</option>
+                                <option>Afectado DANA</option>
+                                <option>Familia</option>
+                                <option>Colectivo estigmatizado</option>
+                                <option>Comunidad local</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <div class="row">
-                        <div style="flex:1;">
-                            <label for="como">Cómo se enteró</label>
-                            <select id="como">
-                                <option value="">-- Seleccionar --</option>
-                                <option>Boca a boca</option>
-                                <option>Web</option>
-                                <option>Redes sociales</option>
-                                <option>Institución</option>
-                                <option>Flyer / Cartel</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div style="flex:1;">
-                            <label for="repite">¿Repite?</label>
-                            <select id="repite">
-                                <option value="">-- --</option>
-                                <option>Sí</option><option>No</option>
-                            </select>
-                        </div>
-                        <div style="flex:1;">
-                            <label for="voluntario">Voluntario</label>
-                            <select id="voluntario">
-                                <option value="">-- --</option>
-                                <option>Sí</option><option>No</option>
-                            </select>
-                        </div>
-                        <div style="flex:1;">
-                            <label for="horasVol">Horas voluntario</label>
-                            <input type="number" id="horasVol" min="0" step="0.5" placeholder="0" value="0"/>
-                        </div>
-                    </div>
+                    <div class="row">
+                        <div style="flex:1;">
+                            <label for="como">Cómo se enteró</label>
+                            <select id="como">
+                                <option value="">-- Seleccionar --</option>
+                                <option>Boca a boca</option>
+                                <option>Web</option>
+                                <option>Redes sociales</option>
+                                <option>Institución</option>
+                                <option>Flyer / Cartel</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div style="flex:1;">
+                            <label for="repite">¿Repite?</label>
+                            <select id="repite">
+                                <option value="">-- --</option>
+                                <option>Sí</option><option>No</option>
+                            </select>
+                        </div>
+                        <div style="flex:1;">
+                            <label for="voluntario">Voluntario</label>
+                            <select id="voluntario">
+                                <option value="">-- --</option>
+                                <option>Sí</option><option>No</option>
+                            </select>
+                        </div>
+                        <div style="flex:1;">
+                            <label for="horasVol">Horas voluntario</label>
+                            <input type="number" id="horasVol" min="0" step="0.5" placeholder="0" value="0"/>
+                        </div>
+                    </div>
 
-                    <div class="row" style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--border);">
-                        <div style="flex:1;">
-                            <label for="satisf">Satisfacción (1-5)</label>
-                            <input type="number" id="satisf" min="1" max="5" value="5" />
-                        </div>
-                        <div style="flex:1;">
-                            <label for="bienAntes">Bienestar antes (1-5)</label>
-                            <input type="number" id="bienAntes" min="1" max="5" value="3" />
-                        </div>
-                        <div style="flex:1;">
-                            <label for="bienDespues">Bienestar después (1-5)</label>
-                            <input type="number" id="bienDespues" min="1" max="5" value="4" />
-                        </div>
-                    </div>
+                    <div class="row" style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--border);">
+                        <div style="flex:1;">
+                            <label for="satisf">Satisfacción (1-5)</label>
+                            <input type="number" id="satisf" min="1" max="5" value="5" />
+                        </div>
+                        <div style="flex:1;">
+                            <label for="bienAntes">Bienestar antes (1-5)</label>
+                            <input type="number" id="bienAntes" min="1" max="5" value="3" />
+                        </div>
+                        <div style="flex:1;">
+                            <label for="bienDespues">Bienestar después (1-5)</label>
+                            <input type="number" id="bienDespues" min="1" max="5" value="4" />
+                        </div>
+                    </div>
 
-                    <div class="row" style="margin-top:10px;">
-                        <div style="flex:1;">
-                            <label for="nombre">Nombre participante (opcional)</label>
-                            <input type="text" id="nombre" placeholder="Nombre o iniciales" />
-                        </div>
-                    </div>
+                    <div class="row" style="margin-top:10px;">
+                        <div style="flex:1;">
+                            <label for="nombre">Nombre participante (opcional)</label>
+                            <input type="text" id="nombre" placeholder="Nombre o iniciales" />
+                        </div>
+                    </div>
 
-                    <div style="margin-top:10px;">
-                        <label for="obs">Observaciones</label>
-                        <textarea id="obs" placeholder="Notas breves sobre la sesión o el participante..."></textarea>
-                    </div>
+                    <div style="margin-top:10px;">
+                        <label for="obs">Observaciones</label>
+                        <textarea id="obs" placeholder="Notas breves sobre la sesión o el participante..."></textarea>
+                    </div>
 
-                    <div style="display:flex;gap:10px;margin-top:20px;align-items:center; justify-content: flex-end;">
-                        <div class="small" style="margin-right:auto;">Guarda en `localStorage` (navegador).</div>
-                        <button type="button" class="secondary" id="clearFormBtn">Limpiar</button>
-                        <button type="submit">Guardar registro</button>
-                    </div>
-                </form>
-            </div>
+                    <div style="display:flex;gap:10px;margin-top:20px;align-items:center; justify-content: flex-end;">
+                        <div class="small" style="margin-right:auto;">¡Guardará directamente en tu Google Sheet!</div>
+                        <button type="button" class="secondary" id="clearFormBtn">Limpiar</button>
+                        <button type="submit">Guardar registro</button>
+                    </div>
+                </form>
+            </div>
 
-            <div class="card" style="margin-top:24px;">
-                <h3>Lista de Registros</h3>
-                <div class="controls">
-                    <button id="exportCsv">Exportar a CSV</button>
-                    <button id="clearAll" class="secondary">⚠️ Borrar todos los registros</button>
-                </div>
+            <div class="card" style="margin-top:24px;">
+                <h3>Lista de Registros (Local)</h3>
+                <p class="small">⚠️ Esta tabla y los botones debajo solo muestran datos antiguos guardados en tu navegador (LocalStorage), **no** el contenido de tu Google Sheet.</p>
+                <div class="controls">
+                    <button id="exportCsv">Exportar a CSV (Local)</button>
+                    <button id="clearAll" class="secondary">⚠️ Borrar registros locales</button>
+                </div>
 
-                <div style="margin-top:12px; overflow:auto; max-height:450px; border:1px solid var(--border); border-radius:10px;">
-                    <table id="tableRegs">
-                        <thead>
-                            <tr>
-                                <th>Fecha</th><th>Taller</th><th>Tipo</th><th>Cómo</th><th>Satisf.</th><th>Bienestar Δ</th><th>Vol.</th><th title="Observaciones">Obs</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+                <div style="margin-top:12px; overflow:auto; max-height:450px; border:1px solid var(--border); border-radius:10px;">
+                    <table id="tableRegs">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th><th>Taller</th><th>Tipo</th><th>Cómo</th><th>Satisf.</th><th>Bienestar Δ</th><th>Vol.</th><th title="Observaciones">Obs</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-        <div>
-            <div class="card">
-                <h3>📈 KPIs Principales</h3>
-                <div class="kpi-row" id="kpiRow">
-                    <div class="kpi">
-                        <div class="num" id="k_totalWorkshops">0</div>
-                        <div class="label">Participantes (registros)</div>
-                    </div>
-                    <div class="kpi">
-                        <div class="num" id="k_avgSatisf">0</div>
-                        <div class="label">Satisf. media (1-5)</div>
-                    </div>
-                    <div class="kpi">
-                        <div class="num" id="k_avgImpro">0</div>
-                        <div class="label">Mejora bienestar (Δ)</div>
-                    </div>
-                    <div class="kpi">
-                        <div class="num" id="k_repeatRate">0%</div>
-                        <div class="label">Tasa de repetición</div>
-                    </div>
-                    <div class="kpi">
-                        <div class="num" id="k_volHours">0</div>
-                        <div class="label">Horas voluntariado</div>
-                    </div>
-                </div>
+        <div>
+            <div class="card">
+                <h3>📈 KPIs Principales (Basado en datos locales)</h3>
+                <div class="kpi-row" id="kpiRow">
+                    <div class="kpi">
+                        <div class="num" id="k_totalWorkshops">0</div>
+                        <div class="label">Participantes (registros)</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="num" id="k_avgSatisf">0</div>
+                        <div class="label">Satisf. media (1-5)</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="num" id="k_avgImpro">0</div>
+                        <div class="label">Mejora bienestar (Δ)</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="num" id="k_repeatRate">0%</div>
+                        <div class="label">Tasa de repetición</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="num" id="k_volHours">0</div>
+                        <div class="label">Horas voluntariado</div>
+                    </div>
+                </div>
 
-                <button id="reloadKPIs" class="secondary" style="width:100%; margin-bottom:12px;">Actualizar Métricas y Gráficos</button>
+                <button id="reloadKPIs" class="secondary" style="width:100%; margin-bottom:12px;">Actualizar Métricas y Gráficos (Solo datos locales)</button>
 
-                <h4 style="font-size:16px; font-weight:600; margin-top:16px; margin-bottom:8px;">Gráficos Clave</h4>
-                
-                <div class="chart-container">
-                    <canvas id="chartSource"></canvas>
-                    <p class="small" style="text-align: center; margin-top: -10px;">Fuente de entrada</p>
-                </div>
+                <h4 style="font-size:16px; font-weight:600; margin-top:16px; margin-bottom:8px;">Gráficos Clave</h4>
+                
+                <div class="chart-container">
+                    <canvas id="chartSource"></canvas>
+                    <p class="small" style="text-align: center; margin-top: -10px;">Fuente de entrada</p>
+                </div>
 
-                <div class="chart-container">
-                    <canvas id="chartSatisf"></canvas>
-                    <p class="small" style="text-align: center; margin-top: -10px;">Satisfacción media por taller (Top 8)</p>
-                </div>
-            </div>
+                <div class="chart-container">
+                    <canvas id="chartSatisf"></canvas>
+                    <p class="small" style="text-align: center; margin-top: -10px;">Satisfacción media por taller (Top 8)</p>
+                </div>
+            </div>
 
-            <div class="card" style="margin-top:24px;">
-                <h3>📰 Métricas de Comunicación (Entrada Manual)</h3>
-                <form id="comForm">
-                    <div class="row">
-                        <div style="flex:1;">
-                            <label for="periodo">Periodo (ej. 2025-Q3)</label>
-                            <input type="text" id="periodo" placeholder="2025-Q3" required />
-                        </div>
-                        <div style="flex:1;">
-                            <label for="visitasWeb">Visitas web</label>
-                            <input type="number" id="visitasWeb" min="0" placeholder="0" value="0"/>
-                        </div>
-                    </div>
+            <div class="card" style="margin-top:24px;">
+                <h3>📰 Métricas de Comunicación (Entrada Manual Local)</h3>
+                <form id="comForm">
+                    <div class="row">
+                        <div style="flex:1;">
+                            <label for="periodo">Periodo (ej. 2025-Q3)</label>
+                            <input type="text" id="periodo" placeholder="2025-Q3" required />
+                        </div>
+                        <div style="flex:1;">
+                            <label for="visitasWeb">Visitas web</label>
+                            <input type="number" id="visitasWeb" min="0" placeholder="0" value="0"/>
+                        </div>
+                    </div>
 
-                    <div class="row">
-                        <div style="flex:1;">
-                            <label for="alcance">Alcance redes (impresiones)</label>
-                            <input type="number" id="alcance" min="0" placeholder="0" value="0"/>
-                        </div>
-                        <div style="flex:1;">
-                            <label for="seguidores">Seguidores nuevos</label>
-                            <input type="number" id="seguidores" min="0" placeholder="0" value="0"/>
-                        </div>
-                    </div>
+                    <div class="row">
+                        <div style="flex:1;">
+                            <label for="alcance">Alcance redes (impresiones)</label>
+                            <input type="number" id="alcance" min="0" placeholder="0" value="0"/>
+                        </div>
+                        <div style="flex:1;">
+                            <label for="seguidores">Seguidores nuevos</label>
+                            <input type="number" id="seguidores" min="0" placeholder="0" value="0"/>
+                        </div>
+                    </div>
 
-                    <div style="display:flex;gap:10px;margin-top:15px;">
-                        <button type="submit">Guardar métricas</button>
-                        <button type="button" id="exportComCsv" class="secondary">Exportar CSV</button>
-                    </div>
-                </form>
+                    <div style="display:flex;gap:10px;margin-top:15px;">
+                        <button type="submit">Guardar métricas</button>
+                        <button type="button" id="exportComCsv" class="secondary">Exportar CSV</button>
+                    </div>
+                </form>
 
-                <div style="margin-top:15px; overflow-x:auto;">
-                    <table id="comTable" style="width:100%;">
-                        <thead><tr><th>Periodo</th><th>Visitas</th><th>Alcance</th><th>Seguidores</th></tr></thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+                <div style="margin-top:15px; overflow-x:auto;">
+                    <table id="comTable" style="width:100%;">
+                        <thead><tr><th>Periodo</th><th>Visitas</th><th>Alcance</th><th>Seguidores</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
 /* -------------------------
-ESTRUCTURA DE DATOS y UTILIDADES
+ESTRUCTURA DE DATOS y UTILIDADES (Local Storage)
 --------------------------*/
-const STORAGE_KEY = 'asoc_registros_v2'; // Clave actualizada
-const COMM_KEY = 'asoc_metrica_com_v2'; // Clave actualizada
+const STORAGE_KEY = 'asoc_registros_v2'; // Clave para registros antiguos/locales
+const COMM_KEY = 'asoc_metrica_com_v2'; // Clave para métricas de comunicación (Sigue siendo local)
 
 /** Genera un ID único simple. */
 function uid(){ return 'id'+Math.random().toString(36).slice(2,9); }
 
 /** Escapa HTML para prevenir XSS. */
 function escapeHtml(s){
-    return String(s || '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+    return String(s || '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 }
 
-/** Carga los datos de registros. */
+/** Carga los datos de registros (SOLO LOCALES Y ANTIGUOS). */
 function loadData(){
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
 }
 
-/** Guarda los datos de registros. */
+/** Guarda los datos de registros (SOLO LOCALES Y ANTIGUOS). */
 function saveData(arr){
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
 }
 
-/** Carga los datos de comunicación. */
+/** Carga los datos de comunicación (LOCAL). */
 function loadComm(){
-    const raw = localStorage.getItem(COMM_KEY);
-    return raw ? JSON.parse(raw) : [];
+    const raw = localStorage.getItem(COMM_KEY);
+    return raw ? JSON.parse(raw) : [];
 }
 
-/** Guarda los datos de comunicación. */
+/** Guarda los datos de comunicación (LOCAL). */
 function saveComm(arr){
-    localStorage.setItem(COMM_KEY, JSON.stringify(arr));
+    localStorage.setItem(COMM_KEY, JSON.stringify(arr));
 }
 
 /* -------------------------
-RENDER TABLA DE REGISTROS
+RENDER TABLA DE REGISTROS (Muestra solo datos locales antiguos)
 --------------------------*/
 function renderTable(){
-    const data = loadData();
-    const tbody = document.querySelector('#tableRegs tbody');
-    tbody.innerHTML = '';
-    
-    // Mostramos los últimos registros primero
-    data.slice().reverse().forEach(r=>{
-        const tr = document.createElement('tr');
-        const diff = (Number(r.bienDespues)||0) - (Number(r.bienAntes)||0);
-        const diffText = diff > 0 ? `+${diff}` : (diff < 0 ? `${diff}` : '-');
+    const data = loadData();
+    const tbody = document.querySelector('#tableRegs tbody');
+    tbody.innerHTML = '';
+    
+    // Mostramos los últimos registros primero
+    data.slice().reverse().forEach(r=>{
+        const tr = document.createElement('tr');
+        const diff = (Number(r.bienDespues)||0) - (Number(r.bienAntes)||0);
+        const diffText = diff > 0 ? `+${diff}` : (diff < 0 ? `${diff}` : '-');
 
-        tr.innerHTML = `
-            <td>${r.fecha || '-'}</td>
-            <td title="${escapeHtml(r.taller)}">${escapeHtml(r.taller).slice(0, 30)}...</td>
-            <td>${escapeHtml(r.tipoPublico) || '-'}</td>
-            <td>${escapeHtml(r.como) || '-'}</td>
-            <td>${r.satisf || '-'}</td>
-            <td>${diffText}</td>
-            <td>${r.voluntario === 'Sí' ? (r.horasVol || 'Sí') : 'No'}</td>
-            <td title="${escapeHtml(r.obs||'')}">${(r.obs||'').slice(0,25)}${(r.obs||'').length > 25 ? '...' : ''}</td>
-        `;
-        tbody.appendChild(tr);
-    });
+        tr.innerHTML = `
+            <td>${r.fecha || '-'}</td>
+            <td title="${escapeHtml(r.taller)}">${escapeHtml(r.taller).slice(0, 30)}${(r.taller||'').length > 30 ? '...' : ''}</td>
+            <td>${escapeHtml(r.tipoPublico) || '-'}</td>
+            <td>${escapeHtml(r.como) || '-'}</td>
+            <td>${r.satisf || '-'}</td>
+            <td>${diffText}</td>
+            <td>${r.voluntario === 'Sí' ? (r.horasVol || 'Sí') : 'No'}</td>
+            <td title="${escapeHtml(r.obs||'')}">${(r.obs||'').slice(0,25)}${(r.obs||'').length > 25 ? '...' : ''}</td>
+        `;
+        tbody.appendChild(tr);
+    });
 }
 
 /* -------------------------
-CÁLCULO DE KPIs
+CÁLCULO DE KPIs (Usa solo datos locales antiguos)
 --------------------------*/
 function computeKPIs(){
-    const data = loadData();
-    const k = { total: 0, avgSatis: 0, avgImpro: 0, repeatRate: 0, volHours: 0 };
-    if(data.length === 0) return k;
+    const data = loadData();
+    const k = { total: 0, avgSatis: 0, avgImpro: 0, repeatRate: 0, volHours: 0 };
+    if(data.length === 0) return k;
 
-    let sumS = 0, sumI = 0, repeats = 0, hours = 0;
-    
-    data.forEach(r=>{
-        sumS += Number(r.satisf || 0);
-        const before = Number(r.bienAntes || 0);
-        const after = Number(r.bienDespues || 0);
-        sumI += (after - before);
-        if(r.repite === 'Sí') repeats++;
-        if(r.voluntario === 'Sí') hours += Number(r.horasVol || 0);
-    });
+    let sumS = 0, sumI = 0, repeats = 0, hours = 0;
+    
+    data.forEach(r=>{
+        sumS += Number(r.satisf || 0);
+        const before = Number(r.bienAntes || 0);
+        const after = Number(r.bienDespues || 0);
+        sumI += (after - before);
+        if(r.repite === 'Sí') repeats++;
+        if(r.voluntario === 'Sí') hours += Number(r.horasVol || 0);
+    });
 
-    k.total = data.length;
-    k.avgSatis = (sumS / data.length);
-    k.avgImpro = (sumI / data.length);
-    k.repeatRate = (repeats / data.length) * 100;
-    k.volHours = hours;
-    
-    return k;
+    k.total = data.length;
+    k.avgSatis = (sumS / data.length);
+    k.avgImpro = (sumI / data.length);
+    k.repeatRate = (repeats / data.length) * 100;
+    k.volHours = hours;
+    
+    return k;
 }
 
 function updateKPIsAndCharts(){
-    const k = computeKPIs();
-    document.getElementById('k_totalWorkshops').textContent = k.total.toLocaleString('es-ES');
-    document.getElementById('k_avgSatisf').textContent = k.avgSatis ? k.avgSatis.toFixed(2) : '0';
-    document.getElementById('k_avgImpro').textContent = k.avgImpro ? k.avgImpro.toFixed(2) : '0';
-    document.getElementById('k_repeatRate').textContent = k.repeatRate ? k.repeatRate.toFixed(1)+'%' : '0%';
-    document.getElementById('k_volHours').textContent = k.volHours ? k.volHours.toLocaleString('es-ES', { maximumFractionDigits: 1 }) : '0';
+    const k = computeKPIs();
+    document.getElementById('k_totalWorkshops').textContent = k.total.toLocaleString('es-ES');
+    document.getElementById('k_avgSatisf').textContent = k.avgSatis ? k.avgSatis.toFixed(2) : '0';
+    document.getElementById('k_avgImpro').textContent = k.avgImpro ? k.avgImpro.toFixed(2) : '0';
+    document.getElementById('k_repeatRate').textContent = k.repeatRate ? k.repeatRate.toFixed(1)+'%' : '0%';
+    document.getElementById('k_volHours').textContent = k.volHours ? k.volHours.toLocaleString('es-ES', { maximumFractionDigits: 1 }) : '0';
 
-    drawSourceChart();
-    drawSatisfChart();
+    drawSourceChart();
+    drawSatisfChart();
 }
 
 /* -------------------------
-GRÁFICOS (Chart.js)
+GRÁFICOS (Chart.js) - Usan solo datos locales antiguos
 --------------------------*/
 const baseChartConfig = {
-    plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 10 } },
-        datalabels: { display: false } // Desactivado por defecto
-    },
-    responsive: true,
-    maintainAspectRatio: false,
+    plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 10 } },
+        datalabels: { display: false } // Desactivado por defecto
+    },
+    responsive: true,
+    maintainAspectRatio: false,
 };
 
 let chartSource = null;
 function drawSourceChart(){
-    const data = loadData();
-    const counts = {};
-    data.forEach(r=>{ const key = r.como || 'Desconocido'; counts[key] = (counts[key]||0) + 1; });
-    const labels = Object.keys(counts);
-    const values = labels.map(l=>counts[l]);
-    
-    const ctx = document.getElementById('chartSource').getContext('2d');
-    if(chartSource) chartSource.destroy();
-    
-    chartSource = new Chart(ctx, {
-        type: 'pie',
-        data: { 
-            labels, 
-            datasets: [{ 
-                data: values, 
-                backgroundColor: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe', '#e0f2fe'],
-                hoverOffset: 10
-            }]
-        },
-        options: {
-            ...baseChartConfig,
-            plugins: {
-                ...baseChartConfig.plugins,
-                datalabels: {
-                    color: '#fff',
-                    formatter: (value, ctx) => {
-                        let sum = ctx.dataset.data.reduce((a, b) => a + b, 0);
-                        let percentage = Math.round((value * 100) / sum) + '%';
-                        return percentage;
-                    },
-                    display: 'auto'
-                }
-            }
-        },
-        plugins: [ChartDataLabels]
-    });
+    const data = loadData();
+    const counts = {};
+    data.forEach(r=>{ const key = r.como || 'Desconocido'; counts[key] = (counts[key]||0) + 1; });
+    const labels = Object.keys(counts);
+    const values = labels.map(l=>counts[l]);
+    
+    const ctx = document.getElementById('chartSource').getContext('2d');
+    if(chartSource) chartSource.destroy();
+    
+    chartSource = new Chart(ctx, {
+        type: 'pie',
+        data: { 
+            labels, 
+            datasets: [{ 
+                data: values, 
+                backgroundColor: ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe', '#e0f2fe'],
+                hoverOffset: 10
+            }]
+        },
+        options: {
+            ...baseChartConfig,
+            plugins: {
+                ...baseChartConfig.plugins,
+                datalabels: {
+                    color: '#fff',
+                    formatter: (value, ctx) => {
+                        let sum = ctx.dataset.data.reduce((a, b) => a + b, 0);
+                        let percentage = Math.round((value * 100) / sum) + '%';
+                        return percentage;
+                    },
+                    display: 'auto'
+                }
+            }
+        },
+        plugins: [ChartDataLabels]
+    });
 }
 
 let chartSatisf = null;
 function drawSatisfChart(){
-    const data = loadData();
-    const byTaller = {};
-    data.forEach(r=>{
-        const t = r.taller || 'Sin nombre';
-        if(!byTaller[t]) byTaller[t] = {sum:0,count:0};
-        byTaller[t].sum += Number(r.satisf||0);
-        byTaller[t].count += 1;
-    });
-    
-    const entries = Object.entries(byTaller).map(([t,o])=>({t,avg: o.sum / o.count, count:o.count}));
-    entries.sort((a,b)=>b.count - a.count); // Ordenar por cantidad de registros
-    
-    const top = entries.slice(0,8);
-    const labels = top.map(e=>e.t.slice(0, 30)); // Limitar el texto de la etiqueta
-    const values = top.map(e=> Number(e.avg.toFixed(2)) );
-    
-    const ctx = document.getElementById('chartSatisf').getContext('2d');
-    if(chartSatisf) chartSatisf.destroy();
-    
-    chartSatisf = new Chart(ctx, {
-        type: 'bar',
-        data: { 
-            labels, 
-            datasets: [{ 
-                label: 'Satisf. media', 
-                data: values,
-                backgroundColor: '#34d399', // Verde atractivo
-                borderColor: '#10b981',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            ...baseChartConfig,
-            indexAxis: 'y',
-            plugins: {
-                ...baseChartConfig.plugins,
-                legend: { display: false },
-                datalabels: {
-                    anchor: 'end',
-                    align: 'right',
-                    color: '#1f2937',
-                    formatter: (value) => value.toFixed(2)
-                }
-            },
-            scales: {
-                x: { beginAtZero: true, max: 5 },
-                y: { ticks: { autoSkip: false } }
-            }
-        },
-        plugins: [ChartDataLabels]
-    });
+    const data = loadData();
+    const byTaller = {};
+    data.forEach(r=>{
+        const t = r.taller || 'Sin nombre';
+        if(!byTaller[t]) byTaller[t] = {sum:0,count:0};
+        byTaller[t].sum += Number(r.satisf||0);
+        byTaller[t].count += 1;
+    });
+    
+    const entries = Object.entries(byTaller).map(([t,o])=>({t,avg: o.sum / o.count, count:o.count}));
+    entries.sort((a,b)=>b.count - a.count); // Ordenar por cantidad de registros
+    
+    const top = entries.slice(0,8);
+    const labels = top.map(e=>e.t.slice(0, 30)); // Limitar el texto de la etiqueta
+    const values = top.map(e=> Number(e.avg.toFixed(2)) );
+    
+    const ctx = document.getElementById('chartSatisf').getContext('2d');
+    if(chartSatisf) chartSatisf.destroy();
+    
+    chartSatisf = new Chart(ctx, {
+        type: 'bar',
+        data: { 
+            labels, 
+            datasets: [{ 
+                label: 'Satisf. media', 
+                data: values,
+                backgroundColor: '#34d399', // Verde atractivo
+                borderColor: '#10b981',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            ...baseChartConfig,
+            indexAxis: 'y',
+            plugins: {
+                ...baseChartConfig.plugins,
+                legend: { display: false },
+                datalabels: {
+                    anchor: 'end',
+                    align: 'right',
+                    color: '#1f2937',
+                    formatter: (value) => value.toFixed(2)
+                }
+            },
+            scales: {
+                x: { beginAtZero: true, max: 5 },
+                y: { ticks: { autoSkip: false } }
+            }
+        },
+        plugins: [ChartDataLabels]
+    });
 }
 
 /* -------------------------
 UTILS: CSV export
 --------------------------*/
 function exportToCsv(filename, rows) {
-    if(!rows || rows.length === 0) { alert('No hay datos para exportar'); return; }
-    
-    const headers = Object.keys(rows[0]);
-    // Función para manejar comas y saltos de línea dentro de los campos
-    const processField = (value) => {
-        const str = String(value ?? '');
-        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
-            return `"${str.replaceAll('"', '""')}"`;
-        }
-        return str;
-    };
+    if(!rows || rows.length === 0) { alert('No hay datos para exportar'); return; }
+    
+    const headers = Object.keys(rows[0]);
+    // Función para manejar comas y saltos de línea dentro de los campos
+    const processField = (value) => {
+        const str = String(value ?? '');
+        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+            return `"${str.replaceAll('"', '""')}"`;
+        }
+        return str;
+    };
 
-    const csv = [headers.join(',')].concat(
-        rows.map(r => headers.map(h => processField(r[h])).join(','))
-    ).join('\n'); // Usar \n para mejor compatibilidad
+    const csv = [headers.join(',')].concat(
+        rows.map(r => headers.map(h => processField(r[h])).join(','))
+    ).join('\n'); // Usar \n para mejor compatibilidad
 
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.setAttribute('download', filename);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 /* -------------------------
-EVENTOS del formulario de REGISTRO: ¡MODIFICADO PARA ENVIAR A GOOGLE SHEETS!
+EVENTOS del formulario de REGISTRO: ENVÍO A GOOGLE SHEETS
 --------------------------*/
 
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz-c2-nqz88mHtUkd8WcIA4r4jx71Hm0t0aMyNqM_ftXzUXaGajp7F4EM9vpr62EvU11g/exec'; // <--- ⚠️ ¡PEGAR AQUÍ TU URL REAL DE GOOGLE APPS SCRIPT!
+// ⚠️ ⚠️ ⚠️ ¡CRÍTICO! DEBES PEGAR TU URL REAL DE GOOGLE APPS SCRIPT AQUÍ. ⚠️ ⚠️ ⚠️
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz-c2-nqz88mHtUkd8WcIA4r4jx71Hm0t0aMyNqM_ftXzUXaGajp7F4EM9vpr62EvU11g/exec';
 
 document.getElementById('entryForm').addEventListener('submit', function(ev){
-    ev.preventDefault();
-    
-    // 1. Recolección y saneamiento de datos (igual que antes)
-    const rec = {
-        id: uid(), 
-        fecha: document.getElementById('fecha').value,
-        taller: document.getElementById('taller').value.trim(),
-        lugar: document.getElementById('lugar').value.trim(),
-        edad: document.getElementById('edad').value,
-        tipoPublico: document.getElementById('tipoPublico').value,
-        como: document.getElementById('como').value,
-        repite: document.getElementById('repite').value,
-        voluntario: document.getElementById('voluntario').value,
-        horasVol: Number(document.getElementById('horasVol').value) || 0,
-        satisf: Number(document.getElementById('satisf').value) || 0,
-        bienAntes: Number(document.getElementById('bienAntes').value) || 0,
-        bienDespues: Number(document.getElementById('bienDespues').value) || 0,
-        nombre: document.getElementById('nombre').value.trim(),
-        obs: document.getElementById('obs').value.trim()
-    };
-    
-    // 2. Validación simple
-    if (!rec.fecha || !rec.taller) {
-        alert('Por favor, completa la Fecha y el Nombre del taller.');
-        return;
-    }
+    ev.preventDefault();
+    
+    // 1. Recolección de datos
+    const rec = {
+        id: uid(), 
+        fecha: document.getElementById('fecha').value,
+        taller: document.getElementById('taller').value.trim(),
+        lugar: document.getElementById('lugar').value.trim(),
+        edad: document.getElementById('edad').value,
+        tipoPublico: document.getElementById('tipoPublico').value,
+        como: document.getElementById('como').value,
+        repite: document.getElementById('repite').value,
+        voluntario: document.getElementById('voluntario').value,
+        horasVol: Number(document.getElementById('horasVol').value) || 0,
+        satisf: Number(document.getElementById('satisf').value) || 0,
+        bienAntes: Number(document.getElementById('bienAntes').value) || 0,
+        bienDespues: Number(document.getElementById('bienDespues').value) || 0,
+        nombre: document.getElementById('nombre').value.trim(),
+        obs: document.getElementById('obs').value.trim()
+    };
+    
+    // 2. Validación simple
+    if (!rec.fecha || !rec.taller) {
+        alert('Por favor, completa la Fecha y el Nombre del taller.');
+        return;
+    }
 
-    // Desactivar el botón mientras se envía
-    const submitButton = this.querySelector('button[type="submit"]');
-    submitButton.disabled = true;
-    submitButton.textContent = 'Enviando...';
+    // Desactivar el botón mientras se envía
+    const submitButton = this.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando...';
 
 
-    // 3. Envío de datos al Apps Script (Google Sheets)
-    fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        // 'no-cors' es necesario para que funcione con el servidor de Google Apps Script
-        mode: 'no-cors', 
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(rec)
-    })
-    .then(response => {
-        // En este punto, la petición ha salido del navegador.
-        console.log("Datos enviados a Google Sheets.");
+    // 3. Envío de datos al Apps Script (Google Sheets)
+    fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        // 'no-cors' es necesario para que funcione con el servidor de Google Apps Script
+        mode: 'no-cors', 
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(rec)
+    })
+    .then(response => {
+        // Si la conexión tiene éxito (no-cors no nos da el status real de Google Sheets)
+        console.log("Petición POST enviada a Google Sheets. Revisa tu hoja.");
 
-        // Limpieza y feedback
-        this.reset();
-        document.getElementById('fecha').value = new Date().toISOString().slice(0,10);
-        alert('✅ Registro enviado con éxito al Google Sheet.');
+        // Limpieza y feedback
+        this.reset();
+        document.getElementById('fecha').value = new Date().toISOString().slice(0,10);
+        alert('✅ Registro enviado con éxito al Google Sheet.');
 
-        // Como la fuente de datos ahora es externa, recargar la página es la forma más fácil 
-        // de "vaciar" la vista local y evitar confusiones con datos antiguos.
-        window.location.reload(); 
-    })
-    .catch(error => {
-        // Manejo de error de red
-        console.error('Error al enviar los datos:', error);
-        alert('❌ ERROR: No se pudo conectar con el servidor de Google. Revisa la consola y tu URL.');
-    })
-    .finally(() => {
-        // Restaurar el botón (en caso de que la recarga falle, que no debería)
-        submitButton.disabled = false;
-        submitButton.textContent = 'Guardar registro';
-    });
-
-    
-    /* --------------------------------------------------------------------------------------------------
-    LÓGICA ANTERIOR ELIMINADA: Ya no se llama a loadData, saveData, renderTable, ni updateKPIsAndCharts
-    porque los datos se guardan en Sheets, no en el navegador.
-    --------------------------------------------------------------------------------------------------*/
+        // Recargar la página para evitar que la gente pulse dos veces
+        window.location.reload(); 
+    })
+    .catch(error => {
+        // Manejo de error de red
+        console.error('Error al enviar los datos:', error);
+        alert('❌ ERROR: No se pudo conectar con el servidor de Google. Revisa tu URL de Apps Script.');
+    })
+    .finally(() => {
+        // Esto solo se ejecutará si la recarga de página falla
+        submitButton.disabled = false;
+        submitButton.textContent = 'Guardar registro';
+    });
 });
 
 document.getElementById('clearFormBtn').addEventListener('click', function(){
-    document.getElementById('entryForm').reset();
-    document.getElementById('fecha').value = new Date().toISOString().slice(0,10); // Restablecer fecha
+    document.getElementById('entryForm').reset();
+    document.getElementById('fecha').value = new Date().toISOString().slice(0,10); // Restablecer fecha
 });
 
 document.getElementById('clearAll').addEventListener('click', function(){
-    // *FUNCIONALIDAD MODIFICADA*: Ahora borra solo los datos LOCALES viejos.
-    if(confirm('🚨 ¡ATENCIÓN! ¿Borrar TODOS los registros LOCALES (en tu navegador)? Los datos en Google Sheets NO se verán afectados.')){
-        localStorage.removeItem(STORAGE_KEY);
-        alert('🗑️ Todos los registros locales borrados. La fuente de datos principal es Google Sheets.');
-        window.location.reload(); // Recargar para limpiar la vista.
-    }
+    // Borra solo los datos LOCALES viejos.
+    if(confirm('🚨 ¡ATENCIÓN! ¿Borrar TODOS los registros LOCALES (en tu navegador)? Los datos en Google Sheets NO se verán afectados.')){
+        localStorage.removeItem(STORAGE_KEY);
+        alert('🗑️ Todos los registros locales borrados. La fuente de datos principal es Google Sheets.');
+        window.location.reload(); // Recargar para limpiar la vista.
+    }
 });
 
 document.getElementById('exportCsv').addEventListener('click', function(){
-    // *FUNCIONALIDAD MODIFICADA*: Ahora exporta solo los datos LOCALES viejos.
-    const data = loadData();
-    exportToCsv('registros_asociacion_LOCAL.csv', data);
-    alert('Exportando datos antiguos guardados LOCALMENTE. La fuente de datos principal es Google Sheets.');
+    // Exporta solo los datos LOCALES viejos.
+    const data = loadData();
+    exportToCsv('registros_asociacion_LOCAL.csv', data);
+    alert('Exportando datos antiguos guardados LOCALMENTE. La fuente de datos principal es Google Sheets.');
 });
+
 /* -------------------------
-COMUNICACIÓN - MÉTRICAS MANUALES
+COMUNICACIÓN - MÉTRICAS MANUALES (LOCALES)
 --------------------------*/
 document.getElementById('comForm').addEventListener('submit', function(ev){
-    ev.preventDefault();
-    const rec = {
-        id: uid(),
-        periodo: document.getElementById('periodo').value.trim() || (new Date().getFullYear() + '-N/A'),
-        visitasWeb: Number(document.getElementById('visitasWeb').value) || 0,
-        alcance: Number(document.getElementById('alcance').value) || 0,
-        seguidores: Number(document.getElementById('seguidores').value) || 0
-    };
-    
-    const arr = loadComm();
-    arr.push(rec);
-    saveComm(arr);
-    renderCommTable();
-    this.reset();
-    alert('✅ Métricas guardadas.');
+    ev.preventDefault();
+    const rec = {
+        id: uid(),
+        periodo: document.getElementById('periodo').value.trim() || (new Date().getFullYear() + '-N/A'),
+        visitasWeb: Number(document.getElementById('visitasWeb').value) || 0,
+        alcance: Number(document.getElementById('alcance').value) || 0,
+        seguidores: Number(document.getElementById('seguidores').value) || 0
+    };
+    
+    const arr = loadComm();
+    arr.push(rec);
+    saveComm(arr);
+    renderCommTable();
+    this.reset();
+    alert('✅ Métricas guardadas localmente.');
 });
 
 document.getElementById('exportComCsv').addEventListener('click', function(){
-    const arr = loadComm();
-    exportToCsv('metrica_comunicacion.csv', arr);
+    const arr = loadComm();
+    exportToCsv('metrica_comunicacion.csv', arr);
 });
 
 function renderCommTable(){
-    const arr = loadComm();
-    const tbody = document.querySelector('#comTable tbody');
-    tbody.innerHTML = '';
-    // Mostramos los últimos primero
-    arr.slice().reverse().forEach(r=>{
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td>${escapeHtml(r.periodo)}</td>
-            <td>${r.visitasWeb.toLocaleString('es-ES')}</td>
-            <td>${r.alcance.toLocaleString('es-ES')}</td>
-            <td>${r.seguidores.toLocaleString('es-ES')}</td>
-        `;
-        tbody.appendChild(tr);
-    });
+    const arr = loadComm();
+    const tbody = document.querySelector('#comTable tbody');
+    tbody.innerHTML = '';
+    // Mostramos los últimos primero
+    arr.slice().reverse().forEach(r=>{
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${escapeHtml(r.periodo)}</td>
+            <td>${r.visitasWeb.toLocaleString('es-ES')}</td>
+            <td>${r.alcance.toLocaleString('es-ES')}</td>
+            <td>${r.seguidores.toLocaleString('es-ES')}</td>
+        `;
+        tbody.appendChild(tr);
+    });
 }
 
 /* -------------------------
 INICIALIZACIÓN
 --------------------------*/
 function init(){
-    // Establecer fecha por defecto a hoy
-    document.getElementById('fecha').value = new Date().toISOString().slice(0,10);
-    renderTable();
-    renderCommTable();
-    updateKPIsAndCharts();
+    // Establecer fecha por defecto a hoy
+    document.getElementById('fecha').value = new Date().toISOString().slice(0,10);
+    
+    // Estas funciones ahora solo cargan datos antiguos de localStorage
+    renderTable(); 
+    renderCommTable();
+    updateKPIsAndCharts();
 }
 init();
 
